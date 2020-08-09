@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background: #f0f0f0;
+    background-image: 
+    url(assets/Images/Illustration2.png),
+    url(assets/Images/Illustration1.png),
+    url(assets/Images/Illustration3.png),
+    url(assets/Images/Illustration5.png),
+    url(assets/Images/Illustration4.png);
+  background-position:
+    top -165px right -75px,
+    bottom -115px left -165px,
+    top 55% left 10%,
+    bottom 17% right 5%,
+    bottom -50px right -50px;
+  background-repeat:
+    no-repeat;
+    padding: 10rem 20rem;
+}
+
+@font-face {
+    font-family: Metropolis-Black;
+    src: url(assets/Fonts/Metropolis/Metropolis-Black.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Metropolis-BlackItalic;
+    src: url(assets/Fonts/Metropolis/Metropolis-BlackItalic.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Metropolis-ExtraBold;
+    src: url(assets/Fonts/Metropolis/Metropolis-ExtraBold.otf) format("opentype");
+}

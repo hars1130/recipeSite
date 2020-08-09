@@ -1,0 +1,71 @@
+<div class="back">
+    <h2 (click)="goBack()">&larr; Go Back</h2>
+</div>
+<div class="recipe-detail-container">
+<div class="left-section" *ngIf="recipe">
+    <div class="image-container">
+        <img [src]="'assets/Images/Img' + recipe.id + '.jpg'">
+        <div class="img-overlay">
+            <img src="assets/Icons/ionic-ios-play-circle.png">
+            <p>Play Video</p>
+        </div>
+    </div>
+    <div class="ingredients">
+        <h4>
+            Ingredients
+        </h4>
+        <p>
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+            Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced 
+            in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </p>
+    </div>
+    <div class="preparation">
+        <h4>
+            How to Prepare
+        </h4>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+            content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+            as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+        </p>
+    </div>
+</div>
+<div class="right-section">
+    <h6>RECIPE</h6>
+    <h1>{{recipe.name}}</h1>
+    <h6>DESCRIPTION</h6>
+    <p>
+    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced 
+    in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </p>
+    <div class="counters">
+        <div>
+            8<br>
+            Ingres
+        </div>
+        <div>
+            200<br>
+            Cooks
+        </div>
+        <div>
+            25<br>
+            Mins
+        </div>
+    </div>
+    <div class="fav-section">
+        <h4>
+            <span>Favourite this recipe</span>
+            <img *ngIf="!recipe.isFavourite" src="assets/Icons/feather-heart.png" (click)="recipe.isFavourite=!recipe.isFavourite">
+            <img *ngIf="recipe.isFavourite" src="assets/Icons/feather-heart-color.png" (click)="recipe.isFavourite=!recipe.isFavourite"> 
+        </h4>
+    </div>
+    <div class="comment-section">
+        <h6>ADD COMMENTS</h6>
+        <textarea placeholder="Type comment here"></textarea>
+        <button>ADD COMMENT</button>
+    </div>
+</div>
+</div>

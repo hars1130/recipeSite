@@ -1,0 +1,28 @@
+<div class="cards-container">
+    <div class="search-box">
+        <input type="text" placeholder="Search for your favourite recipe" id="userSearch" [(ngModel)]="userSearch">
+    </div>
+    <h6>CATEGORY</h6>
+    <h1>Pizza and Noodles</h1>
+    <div class="cards">
+        <article *ngFor="let recipe of recipes | filter: userSearch" class="card" [ngStyle]="{'background-image': 'url(assets/Images/Img' + recipe.id + '.jpg)'}">
+            <div class="category">
+                <span>{{recipe.category}}</span>
+            </div>
+            <div class="content">
+                <div class="title-bar">
+                    <label>{{recipe.name}}</label>
+                    <img *ngIf="!recipe.isFavourite" src="assets/Icons/feather-heart.png" (click)="recipe.isFavourite=!recipe.isFavourite">
+                    <img *ngIf="recipe.isFavourite" src="assets/Icons/feather-heart-color.png" (click)="recipe.isFavourite=!recipe.isFavourite">
+                </div>
+                <p> {{recipe.description}} </p>
+            </div>
+            <div class="action-container">
+                <a routerLink="/detail/{{recipe.id}}">
+                    <span>VIEW DETAILS</span> 
+                </a>
+                <button>QUICK VIEW</button>
+            </div>
+        </article>
+    </div>
+</div>
