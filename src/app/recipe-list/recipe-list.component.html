@@ -18,10 +18,16 @@
                 <p> {{recipe.description}} </p>
             </div>
             <div class="action-container">
-                <a routerLink="/detail/{{recipe.id}}">
-                    <span>VIEW DETAILS</span> 
-                </a>
-                <button>QUICK VIEW</button>
+                <div>
+                    <a routerLink="/detail/{{recipe.id}}">
+                        VIEW DETAILS 
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        QUICK VIEW
+                    </a>
+                </div>
             </div>
         </article>
     </div>
