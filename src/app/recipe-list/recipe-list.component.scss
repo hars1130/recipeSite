@@ -1,5 +1,6 @@
 .cards-container {
   padding: 180px 10px;
+  margin: auto;
   .search-box {
     input {
       height: 2rem;
@@ -143,108 +144,35 @@
   }
 }
 
-@media screen and (min-width: 326px) {
+@media screen and (min-width: 230px) {
   .cards-container {
-    padding: 180px 40px;
-  }
-}
-@media screen and (min-width: 336px) {
-  .cards-container {
-    padding: 180px 60px;
-  }
-}
-@media screen and (min-width: 442px) {
-  .cards-container {
-    padding: 180px 80px;
+    max-width: 250px;
+    .search-box {
+      input {
+        min-width: 150px;
+        max-width: 80%;
+      }
+    }
   }
 }
 @media screen and (min-width: 510px) {
   .cards-container {
-    padding: 180px 10px;
-  }
-}
-@media screen and (min-width: 526px) {
-  .cards-container {
-    padding: 180px 20px;
-  }
-}
-@media screen and (min-width: 564px) {
-  .cards-container {
-    padding: 180px 40px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .cards-container {
-    padding: 180px 60px;
-  }
-}
-@media screen and (min-width: 646px) {
-  .cards-container {
-    padding: 180px 80px;
+    max-width: 500px;
+    .search-box {
+      input {
+        min-width: 300px;
+        max-width: 400px;
+      }
+    }
   }
 }
 @media screen and (min-width: 750px) {
   .cards-container {
-    padding: 180px 10px;
-  }
-}
-@media screen and (min-width: 766px) {
-  .cards-container {
-    padding: 180px 20px;
-  }
-}
-@media screen and (min-width: 806px) {
-  .cards-container {
-    padding: 180px 40px;
-  }
-}
-@media screen and (min-width: 846px) {
-  .cards-container {
-    padding: 180px 60px;
-  }
-}
-@media screen and (min-width: 886px) {
-  .cards-container {
-    padding: 180px 80px;
-  }
-}
-@media screen and (min-width: 926px) {
-  .cards-container {
-    padding: 180px 100px;
-  }
-}
-@media screen and (min-width: 966px) {
-  .cards-container {
-    padding: 180px 120px;
+    max-width: 750px;
   }
 }
 @media screen and (min-width: 1090px) {
   .cards-container {
-    padding: 180px 60px;
-  }
-}
-@media screen and (min-width: 1126px) {
-  .cards-container {
-    padding: 180px 80px;
-  }
-}
-@media screen and (min-width: 1166px) {
-  .cards-container {
-    padding: 180px 100px;
-  }
-}
-@media screen and (min-width: 1206px) {
-  .cards-container {
-    padding: 180px 120px;
-  }
-}
-@media screen and (min-width: 1246px) {
-  .cards-container {
-    padding: 180px 140px;
-  }
-}
-@media screen and (min-width: 1288px) {
-  .cards-container {
-    padding: 180px 160px;
+    max-width: 1000px;
   }
 }
